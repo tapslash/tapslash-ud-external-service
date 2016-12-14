@@ -87,33 +87,33 @@ should return your json data:
 
 # create an external service on Tapslash
 
-1. Log in to your developer account at [Tapslash](http://developer.tapslash.com/).
+- Log in to your developer account at [Tapslash](http://developer.tapslash.com/).
 
-2. Click the dropdown menu in the top left, and select **Create**
+- Click the dropdown menu in the top left, and select **Create**
 
-3. Click **Create A Service**
+- Click **Create A Service**
 
-4. Click **External Service**
+- Click **External Service**
 
-5. Set **Category** and **Description** to whatever you want.
+- Set **Category** and **Description** to whatever you want.
 
-6. Set **Service Name** to `dogs`.
+- Set **Service Name** to `dogs`.
 
-7. Set **Service URL** to `https://tapslash-dog-service.herokuapp.com/`.
+- Set **Service URL** to `https://tapslash-dog-service.herokuapp.com/`.
 
-8. Select a valid 300x300 png Flat Icon. (near the bottom)
+- Select a valid 300x300 png Flat Icon. (near the bottom)
 
-9. **Submit**
+- **Submit**
 
 # add the service to your app
 
-1. Navigate to your App under the dropdown menu.
+- Navigate to your App under the dropdown menu.
 
-2. Click **Services**
+- Click **Services**
 
-3. Search for the **dogs** service you've just created.
+- Search for the **dogs** service you've just created.
 
-4. Click **Add Service**
+- Click **Add Service**
 
 # you're all done!
 
