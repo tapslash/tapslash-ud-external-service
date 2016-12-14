@@ -15,11 +15,13 @@ cd external-service
 
 2. Click **New** -> **Create a New App**.
 
-3. Fill out an **App Name** such as `tapslash-dog-service` then click **Create App**.
+3. Choose an **App Name** such as `tapslash-dog-service` then click **Create App**.
+
+**NOTE**: make sure to replace `tapslash-dog-service` with your app name throughout the rest of this tutorial.
 
 4. Select **Heroku Git** as your deployment method.
 
-# deploy your service to heroku
+# deploy your app with heroku
 
 ```
 heroku git:remote -a tapslash-dog-service
