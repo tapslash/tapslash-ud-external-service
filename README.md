@@ -8,15 +8,17 @@ https://market.mashape.com/community/urban-dictionary
 
 ## Deploy With Heroku
 
-**Set your API key as an environment variable in Heroku.**
-
-(replace `YOUR-MASHAPE-KEY` with they key you obtained from Mashape)
-
-`heroku config:set MASHAPE_KEY=YOUR-MASHAPE-KEY`
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
 
 **NOTE**: Heroku will give you an endpoint, substitute that with `YOUR-HEROKU-ENDPOINT`.
+
+## Set your Urban Dictionary API key in Heroku
+
+1. Go to your Heroku App **Settings**
+
+2. Navigate to **Config Vars**
+
+3. Set `MASHAPE_KEY` to your Urban Dictionary (mashape) API key.
 
 ## Test Endpoint
 
