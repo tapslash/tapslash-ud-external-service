@@ -9,32 +9,16 @@ git clone "https://github.com/tapslash/external-service"
 cd external-service
 ```
 
-# create a new app on heroku
-
-- If you haven't already, sign up for heroku and open up your [dashboard](https://dashboard.heroku.com/apps).
-
-- Click **New** -> **Create a New App**.
-
-- Choose an **App Name** such as `tapslash-dog-service` then click **Create App**.
-
-**NOTE**: make sure to replace `tapslash-dog-service` with your app name throughout the rest of this tutorial.
-
-- Select **Heroku Git** as your deployment method.
-
 # deploy your app with heroku
 
-```
-heroku git:remote -a tapslash-dog-service
-echo " " >> ./README.md
-git add .
-git commit -m "add a space to the readme"
-git push heroku master
-```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tapslash/external-service/)
+
+Take note of the endpoint chosen for your app, and rememberd to replace instances of `YOUR-HEROKU-ENDPOINT` throughout this tutorial.
 
 # test your new endpoint
 
 ```
-curl "https://tapslash-dog-service.herokuapp.com/"
+curl YOUR-HEROKU-ENDPOINT
 ```
 
 should return your json data:
@@ -99,7 +83,7 @@ should return your json data:
 
 - Set **Service Name** to `dogs`.
 
-- Set **Service URL** to `https://tapslash-dog-service.herokuapp.com/`.
+- Set **Service URL** to `YOUR-HEROKU-ENDPOINT`.
 
 - Select a valid 300x300 png Flat Icon. (near the bottom)
 
