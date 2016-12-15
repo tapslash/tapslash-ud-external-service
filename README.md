@@ -2,7 +2,7 @@
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
 
-## Get an API key for Urban Dictionary
+## Get an API key for Urban Dictionary (through Mashape)
 
 https://market.mashape.com/community/urban-dictionary
 
