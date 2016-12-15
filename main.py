@@ -1,34 +1,58 @@
-""" An example external service which returns hard-coded dog pictures. """
-
+""" Flask App which implements Urban Dictionary as a Tapslash External Service. """
 import json
+import os
+
 from flask import Flask
+from flask import request
+import unirest
 
 app = Flask(__name__)
 
+MASHAPE_KEY = os.environ["MASHAPE_KEY"]
+
+URBAN_DICTIONARY_URL = "https://mashape-community-urban-dictionary.p.mashape.com/define?term={}"
+
 @app.route("/")
-def results():
+def index():
     """ Returns json search result objects. """
 
-    dog_result = {
-	"subtitle": "a golden retriever",
-	"title": "dog",
-	"url": "http://imgur.com/gallery/6GuZIHD",
-	"uid": "6GuZIHD",
-        "detail": {},
-	"image": {
-	  "url": "http://i.imgur.com/6GuZIHD.jpg",
-	  "width": "643",
-	  "height": "960"
-	},
-	"display_type": "default",
-	"output": "http://imgur.com/gallery/6GuZIHD"
-    }
+    # Parse query parameter.
+    query = request.args.get("q", "hacker") # if no parameter is supplied "hacker" is default ;)
 
-    # show 3 of the same result
-    results = [dog_result, dog_result, dog_result]
+    # Request search results from Urban Dictionary.
+    response = unirest.get(
+        URBAN_DICTIONARY_URL.format(query),
+        headers={
+            "X-Mashape-Key": MASHAPE_KEY,
+            "Accept": "application/json"
+        }
+    )
 
-    data = {"results": results}
-    return json.dumps(data, indent=2)
+    # Map Urban Dictionary results into Tapslash results.
+    results = [
+        {
+            "title": item["word"],
+            "subtitle": item["definition"],
+            "uid": item["defid"],
+            "url": item["permalink"],
+            "detail": {},
+            "image": {
+                "url": "",
+                "width": "",
+                "height": ""
+            },
+            "display_type": "default",
+            "output": item["permalink"]
+        }
+        for item in json.loads(response.raw_body).get("list", [])
+    ]
+
+    return json.dumps(
+        # Put the results under the "results" field on the response object.
+        {"results": results},
+        # Not neccesary to indent, but looks nice for this demo.
+        indent=2
+    )
 
 if __name__ == "__main__":
     app.run()

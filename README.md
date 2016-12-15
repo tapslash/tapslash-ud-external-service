@@ -1,12 +1,22 @@
-# Tapslash External Service Tutorial
+# Tapslash External Service Tutorial - Urban Dictionary (Using Flask)
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
 
+## Get an API key for Urban Dictionary
+
+https://market.mashape.com/community/urban-dictionary
+
 ## Deploy With Heroku
+
+**Set your API key as an environment variable in Heroku.**
+
+(replace `YOUR-MASHAPE-KEY` with they key you obtained from Mashape)
+
+`heroku config:set MASHAPE_KEY=YOUR-MASHAPE-KEY`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
 
-Take note of the endpoint chosen for your app, and rememberd to replace instances of `YOUR-HEROKU-ENDPOINT` throughout this tutorial.
+**NOTE**: Heroku will give you an endpoint, substitute that with `YOUR-HEROKU-ENDPOINT`.
 
 ## Test Endpoint
 
