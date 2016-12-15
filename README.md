@@ -2,13 +2,13 @@
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
 
-# deploy your app with heroku
+## Deploy With Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
 
 Take note of the endpoint chosen for your app, and rememberd to replace instances of `YOUR-HEROKU-ENDPOINT` throughout this tutorial.
 
-# test your new endpoint
+## Test Endpoint
 
 ```
 curl YOUR-HEROKU-ENDPOINT
@@ -62,7 +62,7 @@ should return your json data:
 }
 ```
 
-# create an external service on Tapslash
+## Create an External Service on Tapslash
 
 - Log in to your developer account at [Tapslash](http://developer.tapslash.com/).
 
@@ -82,7 +82,7 @@ should return your json data:
 
 - **Submit**
 
-# add the service to your app
+## Add the Service to Your App on Tapslash
 
 - Navigate to your App under the dropdown menu.
 
@@ -92,7 +92,7 @@ should return your json data:
 
 - Click **Add Service**
 
-# you're all done!
+## You're All Done!
 
 If you have a Tapslash client pointed at this app you should see the dogs service show up in your bar.
 
