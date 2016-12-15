@@ -14,6 +14,7 @@ def results():
 	"title": "dog",
 	"url": "http://imgur.com/gallery/6GuZIHD",
 	"uid": "6GuZIHD",
+        "detail": {},
 	"image": {
 	  "url": "http://i.imgur.com/6GuZIHD.jpg",
 	  "width": "643",
