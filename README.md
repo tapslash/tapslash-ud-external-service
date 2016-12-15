@@ -29,49 +29,7 @@ curl YOUR-HEROKU-ENDPOINT
 should return your json data:
 
 ```
-{
-  "results": [
-    {
-      "uid": "6GuZIHD",
-      "url": "http://imgur.com/gallery/6GuZIHD",
-      "output": "http://imgur.com/gallery/6GuZIHD",
-      "image": {
-        "url": "http://i.imgur.com/6GuZIHD.jpg",
-        "height": "960",
-        "width": "643"
-      },
-      "subtitle": "a golden retriever",
-      "display_type": "default",
-      "title": "dog"
-    },
-    {
-      "uid": "6GuZIHD",
-      "url": "http://imgur.com/gallery/6GuZIHD",
-      "output": "http://imgur.com/gallery/6GuZIHD",
-      "image": {
-        "url": "http://i.imgur.com/6GuZIHD.jpg",
-        "height": "960",
-        "width": "643"
-      },
-      "subtitle": "a golden retriever",
-      "display_type": "default",
-      "title": "dog"
-    },
-    {
-      "uid": "6GuZIHD",
-      "url": "http://imgur.com/gallery/6GuZIHD",
-      "output": "http://imgur.com/gallery/6GuZIHD",
-      "image": {
-        "url": "http://i.imgur.com/6GuZIHD.jpg",
-        "height": "960",
-        "width": "643"
-      },
-      "subtitle": "a golden retriever",
-      "display_type": "default",
-      "title": "dog"
-    }
-  ]
-}
+{ "results": [ { "output": "http://hacker.urbanup.com/118451", "image": { "width": "1024", "url": "https://lh5.googleusercontent.com/-rY97dP0iEo0/AAAAAAAAAAI/AAAAAAAAAGA/xm1HYqJXdMw/s0-c-k-no-ns/photo.jpg", "height": "1024" }, "uid": 118451, "display_type": "default", "title": "hacker", "url": "http://hacker.urbanup.com/118451", "detail": {}, "subtitle": "A person skilled with the use of computers that uses his talents to gain knowledge. Tere are three classifications of hackers:\r\n\r\nWhite-hat (hacking for the enjoyment of exploration)\r\n\r\nBlack-hat (hacking to find exploits and system weaknesses, see [cracker])\r\n\r\nand Grey-hat (someone who is a little of both)" }, { "output": "http://hacker.urbanup.com/323688", "image": { "width": "1024", "url": "https://lh5.googleusercontent.com/-rY97dP0iEo0/AAAAAAAAAAI/AAAAAAAAAGA/xm1HYqJXdMw/s0-c-k-no-ns/photo.jpg", "height": "1024" }
 ```
 
 ## Create an External Service on Tapslash
@@ -86,7 +44,7 @@ should return your json data:
 
 - Set **Category** and **Description** to whatever you want.
 
-- Set **Service Name** to `dogs`.
+- Set **Service Name** to whatever you want.
 
 - Set **Service URL** to `YOUR-HEROKU-ENDPOINT`.
 
@@ -100,11 +58,11 @@ should return your json data:
 
 - Click **Services**
 
-- Search for the **dogs** service you've just created.
+- Search for the service you've just created.
 
 - Click **Add Service**
 
 ## You're All Done!
 
-If you have a Tapslash client pointed at this app you should see the dogs service show up in your bar.
+If you have a Tapslash client pointed at this app you should see the service show up in your bar.
 
