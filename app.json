@@ -1,0 +1,7 @@
+{
+  "name": "Tapslash External Service",
+  "description": "An example endpoint which can serve results to Tapslash.",
+  "repository": "https://github.com/tapslash/external-service",
+  "logo": "http://s3.amazonaws.com/tapslash-media-prod/website/assets/img/nov_assetts/DarkLogotype%402x.png",
+  "keywords": ["tapslash", "search", "service", "external"]
+}
