@@ -37,9 +37,9 @@ def index():
             "url": item["permalink"],
             "detail": {},
             "image": {
-                "url": "",
-                "width": "",
-                "height": ""
+                "url": "https://lh5.googleusercontent.com/-rY97dP0iEo0/AAAAAAAAAAI/AAAAAAAAAGA/xm1HYqJXdMw/s0-c-k-no-ns/photo.jpg",
+                "width": "1024",
+                "height": "1024"
             },
             "display_type": "default",
             "output": item["permalink"]
