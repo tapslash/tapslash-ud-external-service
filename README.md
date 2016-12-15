@@ -2,16 +2,9 @@
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
 
-# clone this repository
-
-```
-git clone "https://github.com/tapslash/external-service"
-cd external-service
-```
-
 # deploy your app with heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tapslash/external-service/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
 
 Take note of the endpoint chosen for your app, and rememberd to replace instances of `YOUR-HEROKU-ENDPOINT` throughout this tutorial.
 
