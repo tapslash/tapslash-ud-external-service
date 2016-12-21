@@ -1,3 +1,5 @@
+![Urban Dictionary Header](UrbanDictionary.png)
+
 # Tapslash External Service Tutorial - Urban Dictionary (Using Flask)
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
