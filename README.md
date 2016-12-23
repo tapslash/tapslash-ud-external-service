@@ -2,6 +2,8 @@
 
 [![Twitter: @tapslash](https://img.shields.io/badge/contact-@Tapslash-blue.svg?style=flat)](https://twitter.com/tapslash)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/tapslash/tapslash-ud-external-service/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/tapslash/tapslash-ud-external-service/shields.svg)](https://github.com/tapslash/tapslash-ud-external-service/issues)
+[![PyPI](https://img.shields.io/pypi/status/Django.svg)](https://github.com/tapslash/tapslash-ud-external-service/)
 
 # Tapslash External Service Tutorial - Urban Dictionary (Using Flask)
 
