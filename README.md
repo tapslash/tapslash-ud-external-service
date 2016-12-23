@@ -1,5 +1,8 @@
 ![Urban Dictionary Header](UrbanDictionary.png)
 
+[![Twitter: @tapslash](https://img.shields.io/badge/contact-@Tapslash-blue.svg?style=flat)](https://twitter.com/tapslash)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/tapslash/tapslash-ud-external-service/blob/master/LICENSE)
+
 # Tapslash External Service Tutorial - Urban Dictionary (Using Flask)
 
 This tutorial will walk you through the steps to set up and deploy an [external service](http://documentation.tapslash.com/docs/external-services).
